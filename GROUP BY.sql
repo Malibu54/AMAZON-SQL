@@ -1,3 +1,6 @@
-SELECT COUNT(*) as total_usuarios_activos
+SELECT COUNT(*) as total_usuarios_apellido
 FROM amazon.usuarios
-GROUP BY apellido;
+GROUP BY apellido
+
+
+/*select * from usuarios*/
