@@ -1,6 +1,7 @@
 -- Función para contar clientes en China
 DELIMITER //
 CREATE FUNCTION ContarUsuariosEnChina() RETURNS INT
+READS SQL DATA
 BEGIN
     DECLARE china_usuarios_contador INT;
     SELECT COUNT(*) INTO china_usuarios_contador FROM direccion WHERE pais = 'China';
@@ -12,6 +13,7 @@ DELIMITER ;
 -- Función para contar clientes con tarjetas de crédito, débito u otros medios de pago
 DELIMITER //
 CREATE FUNCTION ContarVisaYAmex() RETURNS VARCHAR(255)
+READS SQL DATA
 BEGIN
     DECLARE visa INT;
     DECLARE amex INT;
