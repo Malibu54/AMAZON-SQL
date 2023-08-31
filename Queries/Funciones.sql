@@ -11,7 +11,7 @@ DELIMITER ;
 
 -- Función para contar clientes con tarjetas de crédito, débito u otros medios de pago
 DELIMITER //
-CREATE FUNCTION ContadorVisaYAmex() RETURNS VARCHAR(255)
+CREATE FUNCTION ContarVisaYAmex() RETURNS VARCHAR(255)
 BEGIN
     DECLARE visa INT;
     DECLARE amex INT;
