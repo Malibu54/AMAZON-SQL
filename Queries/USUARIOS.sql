@@ -20,4 +20,4 @@ GRANT SELECT, INSERT, UPDATE ON *.* TO 'usuario_escritura'@'localhost';
 
 -- No permitir eliminación de registros para ninguno de los usuarios
 
--- Comenta las sentencias para mayor claridad
+
